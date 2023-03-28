@@ -1,0 +1,10 @@
+load("@rules_rust//rust:defs.bzl", "rust_binary")
+
+package(default_visibility = ["//visibility:public"])
+
+rust_binary(
+    name = "test",
+    srcs = ["src/main.rs"],
+    out_binary = True,
+    edition = "2021",
+)
